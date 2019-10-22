@@ -29,6 +29,6 @@ deploy:
   on:
     tags: true
     repo: exolever/django-exo-role
-    python: 3.6
+    python: 3.7
 after_success:
   - codecov
