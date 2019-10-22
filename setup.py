@@ -30,7 +30,7 @@ setup(
     author='marfyl',
     author_email='marfyl.dev@gmail.com',
     url='https://github.com/exolever/django-exo-role',
-    packages=['exo_role'],
+    packages=['exo_role', 'exo_role.fixtures'],
     include_package_data=True,
     install_requires=[
         'django',
@@ -47,7 +47,7 @@ setup(
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Environment :: Web Environment',
-        'Framework :: Django :: 2',
+        'Framework :: Django :: 2.0',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: BSD License',
         'Natural Language :: English',
