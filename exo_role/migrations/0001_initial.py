@@ -38,8 +38,6 @@ class Migration(migrations.Migration):
                 ('description', models.TextField(blank=True, null=True)),
             ],
             options={
-                'verbose_name': 'ExORole',
-                'verbose_name_plural': 'ExORoles',
                 'ordering': ['category', 'name'],
                 'unique_together': {('code', 'category')},
             },

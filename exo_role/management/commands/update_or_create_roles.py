@@ -4,7 +4,7 @@ from django.core.management import call_command
 
 class Command(BaseCommand):
     def handle(self, *args, **options):
-        self.stdout.write('Creating ExO Roles ...')
+        self.stdout.write(self.style.WARNING('Creating roles ...'))
 
         call_command('loaddata', '1_roles_exo_sprint')
         call_command('loaddata', '2_roles_fastrack')
@@ -12,4 +12,4 @@ class Command(BaseCommand):
         call_command('loaddata', '4_roles_swarm')
         call_command('loaddata', '5_roles_summit')
 
-        self.stdout.write(self.style.SUCCESS('ExO Roles created!'))
+        self.stdout.write(self.style.SUCCESS('Roles created!'))

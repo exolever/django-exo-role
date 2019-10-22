@@ -16,17 +16,11 @@ class ExORole(TimeStampedModel):
     objects = ExORoleManager()
 
     class Meta:
-        verbose_name_plural = 'ExORoles'
-        verbose_name = 'ExORole'
         ordering = ['category', 'name']
         unique_together = ('code', 'category', )
 
     def __str__(self):
         return self.name
-
-    @property
-    def label(self):
-        return self.get_code_display()
 
     @property
     def is_job(self):

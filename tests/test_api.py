@@ -1,10 +1,5 @@
-from django.test import TestCase
-
-from exo_role.models import ExORole
+from rest_framework.test import APITestCase
 
 
-class TestAPITestCase(TestCase):
-
-    def test_migrations_create_initial_data(self):
-        # ASSERTS
-        self.assertTrue(ExORole.objects.all().exists())
+class TestAPITestCase(APITestCase):
+    pass
