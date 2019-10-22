@@ -4,7 +4,6 @@
     name: Speaker
     code: WSP
     category: WO
-    description: ---
 
 - model: exo_role.ExORole
   pk: 23
@@ -12,4 +11,3 @@
     name: Trainer
     code: WTR
     category: WO
-    description: ---

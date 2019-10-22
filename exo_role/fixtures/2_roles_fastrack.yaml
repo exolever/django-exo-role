@@ -4,7 +4,7 @@
     name: Team Leader
     code: FTL
     category: FA
-    description: ---
+    description: Lead and support one team through the Solve Stage of the Fastrack process
 
 - model: exo_role.ExORole
   pk: 16
@@ -12,7 +12,7 @@
     name: Team Member
     code: FTM
     category: FA
-    description: ---
+    description: For one Fastrack, participate meaningfully during the Solve stage and support your team's efforts and the needs of the Region
 
 - model: exo_role.ExORole
   pk: 17
@@ -20,7 +20,7 @@
     name: Curator
     code: TCU
     category: FA
-    description: ---
+    description: Successful execution and delivery of the specified Fastrack
 
 - model: exo_role.ExORole
   pk: 18
@@ -28,7 +28,6 @@
     name: Co-Curator
     code: FCC
     category: FA
-    description: ---
 
 - model: exo_role.ExORole
   pk: 19
@@ -36,7 +35,7 @@
     name: Solution Accelerator
     code: FSA
     category: FA
-    description: ---
+    description: With the support of the Startup Cell and FTI Core, facilitate the successful transfer of Fastrack Solutions from incubation at the SOLVE Stage of the Fastrack to successful Acceleration with the strategic partners
 
 - model: exo_role.ExORole
   pk: 20
@@ -52,4 +51,4 @@
     name: Local Team Member
     code: FLM
     category: FA
-    description: ---
+    description: For one Fastrack, participate meaningfully during the Solve stage and support your team's efforts and the needs of the Region
