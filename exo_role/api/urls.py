@@ -1,9 +1,10 @@
-from django.conf.urls import url
+from django.urls import path
 
-from .views import ExORoleListView
+from .views import ExORoleListView, CategoryListView
 
 app_name = 'exo-role'
 
 urlpatterns = [
-    url(r'^$', ExORoleListView.as_view(), name='list'),
+    path('roles/', ExORoleListView.as_view(), name='roles-list'),
+    path('categories/', CategoryListView.as_view(), name='category-list'),
 ]

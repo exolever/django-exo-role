@@ -1,9 +1,14 @@
 from django.contrib import admin
 
-from .models import ExORole
+from .models import ExORole, Category
+
+
+@admin.register(Category)
+class CategoryAdmin(admin.ModelAdmin):
+    list_display = ('name', 'code', 'created')
 
 
 @admin.register(ExORole)
 class ExORoleAdmin(admin.ModelAdmin):
-    list_filter = ('category', )
-    list_display = ('name', 'category', 'code', 'description')
+    list_filter = ('categories', )
+    list_display = ('name', 'code', 'description')

@@ -3,11 +3,11 @@
   fields:
     name: Speaker
     code: WSP
-    category: WO
+    categories: [3]
 
 - model: exo_role.ExORole
   pk: 23
   fields:
     name: Trainer
     code: WTR
-    category: WO
+    categories: [3]

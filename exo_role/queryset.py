@@ -7,4 +7,4 @@ class ExORoleQueryset(QuerySet):
         return self.filter(code=code)
 
     def filter_by_category(self, category):
-        return self.filter(category=category)
+        return self.filter(categories__in=[category])

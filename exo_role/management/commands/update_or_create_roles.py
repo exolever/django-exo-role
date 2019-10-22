@@ -6,6 +6,7 @@ class Command(BaseCommand):
     def handle(self, *args, **options):
         self.stdout.write(self.style.WARNING('Creating roles ...'))
 
+        call_command('loaddata', '0_roles_categories')
         call_command('loaddata', '1_roles_exo_sprint')
         call_command('loaddata', '2_roles_fastrack')
         call_command('loaddata', '3_roles_workshop')

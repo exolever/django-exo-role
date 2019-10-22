@@ -25,7 +25,7 @@ class ExORoleConfigConfig(AppConf):
     CATEGORY_SWARM = 'SW'
     CATEGORY_SUMMIT = 'SU'
 
-    CATEGORY_CHOICES = (
+    CATEGORY_CODE_CHOICES = (
         (CATEGORY_EXO_SPRINT, 'ExO Sprint'),
         (CATEGORY_FASTRACK, 'Fastrack'),
         (CATEGORY_WORKSHOP, 'Workshop'),

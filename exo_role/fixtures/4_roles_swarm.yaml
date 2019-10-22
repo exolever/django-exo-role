@@ -3,4 +3,4 @@
   fields:
     name: Advisor
     code: SWA
-    category: SW
+    categories: [4]

@@ -1,14 +1,13 @@
 from django.test import TestCase
-from django.conf import settings
 
-from exo_role.models import ExORole
+from exo_role.models import ExORole, Category
 
 
 class TestMigrationsTestCase(TestCase):
 
     def test_migrations_create_initial_roles(self):
         # PREPARE DATA
-        categories = dict(settings.EXO_ROLE_CATEGORY_CHOICES).keys()
+        categories = Category.objects.all()
 
         # ASSERTS
         for category in categories:
