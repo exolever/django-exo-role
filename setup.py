@@ -30,7 +30,8 @@ setup(
     author='marfyl',
     author_email='marfyl.dev@gmail.com',
     url='https://github.com/exolever/django-exo-role',
-    packages=['exo_role', 'exo_role.fixtures'],
+    packages=find_packages(),
+    package_data={'exo_role': ['fixtures/*.yaml']},
     include_package_data=True,
     install_requires=[
         'django',
