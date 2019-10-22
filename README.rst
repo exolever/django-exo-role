@@ -10,9 +10,6 @@ django-exo-role
 
 .. image:: https://codecov.io/gh/exolever/django-exo-role/branch/master/graph/badge.svg
     :target: https://codecov.io/gh/exolever/django-exo-role
-
-.. image:: https://sonarcloud.io/api/project_badges/measure?project=exolever_django-exo-role&metric=alert_status
-   :target: https://sonarcloud.io/dashboard?id=exolever_django-exo-role
   
 .. image:: https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat
    :target: https://github.com/exolever/django-exo-role/issues
