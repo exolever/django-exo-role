@@ -1,0 +1,34 @@
+sudo: false
+dist: xenial
+language: python
+cache: pip
+python:
+python:
+  - "3.7"
+  - "3.6"
+matrix:
+  fast_finish: true
+services:
+  - postgresql
+addons:
+  sonarcloud:
+    organization: openexo
+install: 
+  - pip install -r requirements_test.txt
+before_script:
+  - psql -c 'create database travis_ci_test;' -U postgres
+script:
+  - tox
+  - sonar-scanner
+deploy:
+  provider: pypi
+  distributions: sdist bdist_wheel
+  user: marfyl
+  password:
+    secure: ''
+  on:
+    tags: true
+    repo: exolever/django-exo-role
+    python: 3.6
+after_success:
+  - codecov

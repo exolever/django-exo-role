@@ -1,0 +1,55 @@
+- model: exo_role.ExORole
+  pk: 15
+  fields:
+    name: Team Leader
+    code: FTL
+    category: FA
+    description: ---
+
+- model: exo_role.ExORole
+  pk: 16
+  fields:
+    name: Team Member
+    code: FTM
+    category: FA
+    description: ---
+
+- model: exo_role.ExORole
+  pk: 17
+  fields:
+    name: Curator
+    code: TCU
+    category: FA
+    description: ---
+
+- model: exo_role.ExORole
+  pk: 18
+  fields:
+    name: Co-Curator
+    code: FCC
+    category: FA
+    description: ---
+
+- model: exo_role.ExORole
+  pk: 19
+  fields:
+    name: Solution Accelerator
+    code: FSA
+    category: FA
+    description: ---
+
+- model: exo_role.ExORole
+  pk: 20
+  fields:
+    name: Observer/Evaluator
+    code: FOE
+    category: FA
+    description: ---
+
+- model: exo_role.ExORole
+  pk: 21
+  fields:
+    name: Local Team Member
+    code: FLM
+    category: FA
+    description: ---

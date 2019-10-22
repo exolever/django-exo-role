@@ -1,0 +1,27 @@
+- model: exo_role.ExORole
+  pk: 25
+  fields:
+    name: Collaborator
+    code: SUC
+    category: SU
+
+- model: exo_role.ExORole
+  pk: 26
+  fields:
+    name: Speaker
+    code: SUS
+    category: SU
+
+- model: exo_role.ExORole
+  pk: 27
+  fields:
+    name: Facilitator
+    code: SUF
+    category: SU
+
+- model: exo_role.ExORole
+  pk: 28
+  fields:
+    name: Organizer
+    code: SUO
+    category: SU

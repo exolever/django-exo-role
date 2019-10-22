@@ -1,0 +1,7 @@
+- model: exo_role.ExORole
+  pk: 24
+  fields:
+    name: Advisor
+    code: SWA
+    category: SW
+    description: ---
