@@ -5,10 +5,6 @@ django-exo-role
 .. image:: https://badge.fury.io/py/django-exo-role.svg
     :target: https://badge.fury.io/py/django-exo-role
 
-.. image:: https://requires.io/github/exolever/django-exo-role/requirements.svg?branch=master
-     :target: https://requires.io/github/exolever/django-exo-role/requirements/?branch=master
-     :alt: Requirements Status
-
 .. image:: https://travis-ci.org/exolever/django-exo-role.svg?branch=master
     :target: https://travis-ci.org/exolever/django-exo-role
 
