@@ -17,11 +17,15 @@ class Category(TimeStampedModel):
     def __str__(self):
         return self.name
 
+    @property
+    def num_roles(self):
+        return self.roles.count()
+
 
 class ExORole(TimeStampedModel):
     name = models.CharField(max_length=100)
     code = models.CharField(max_length=3, choices=settings.EXO_ROLE_CODE_CHOICES, unique=True)
-    categories = models.ManyToManyField('Category', related_name='exo_roles')
+    categories = models.ManyToManyField('Category', related_name='roles')
     description = models.TextField(blank=True, null=True)
 
     objects = ExORoleManager()

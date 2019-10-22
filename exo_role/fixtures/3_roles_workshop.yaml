@@ -1,12 +1,12 @@
 - model: exo_role.ExORole
-  pk: 22
+  pk: 41
   fields:
     name: Speaker
     code: WSP
     categories: [3]
 
 - model: exo_role.ExORole
-  pk: 23
+  pk: 42
   fields:
     name: Trainer
     code: WTR

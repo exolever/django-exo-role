@@ -24,6 +24,10 @@ class ExORoleConfigConfig(AppConf):
     CATEGORY_WORKSHOP = 'WO'
     CATEGORY_SWARM = 'SW'
     CATEGORY_SUMMIT = 'SU'
+    CATEGORY_SUMMIT = 'SU'
+    CATEGORY_ADVISORY_CALL = 'AC'
+    CATEGORY_DISRUPTION_SESSION = 'DS'
+    CATEGORY_TALK = 'TA'
 
     CATEGORY_CODE_CHOICES = (
         (CATEGORY_EXO_SPRINT, 'ExO Sprint'),
@@ -31,6 +35,9 @@ class ExORoleConfigConfig(AppConf):
         (CATEGORY_WORKSHOP, 'Workshop'),
         (CATEGORY_SWARM, 'Swarm'),
         (CATEGORY_SUMMIT, 'Summit'),
+        (CATEGORY_ADVISORY_CALL, 'Advisory Call'),
+        (CATEGORY_DISRUPTION_SESSION, 'Disruption Session'),
+        (CATEGORY_TALK, 'Talk'),
     )
 
     # EXO SPRINT
@@ -71,6 +78,15 @@ class ExORoleConfigConfig(AppConf):
     CODE_SUMMIT_FACILITATOR = 'SUF'
     CODE_SUMMIT_ORGANIZER = 'SUO'
 
+    # TICKET
+    CODE_TICKET_ADVISOR = 'ACA'
+
+    # TALK
+    CODE_TALK_SPEAKER = 'TAS'
+
+    # DISRUPTION SESION
+    CODE_DISRUPTION_SPEAKER = 'DSD'
+
     CODE_CHOICES = (
         (CODE_SPRINT_HEAD_COACH, 'Head Coach'),
         (CODE_SPRINT_COACH, 'Sprint Coach'),
@@ -104,4 +120,10 @@ class ExORoleConfigConfig(AppConf):
         (CODE_SUMMIT_SPEAKER, 'Speaker'),
         (CODE_SUMMIT_FACILITATOR, 'Facilitator'),
         (CODE_SUMMIT_ORGANIZER, 'Organizer'),
+
+        (CODE_TICKET_ADVISOR, 'Advisor'),
+
+        (CODE_TALK_SPEAKER, 'Speaker'),
+
+        (CODE_DISRUPTION_SPEAKER, 'Disruptor'),
     )

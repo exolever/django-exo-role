@@ -15,7 +15,7 @@ class CategoryExORoleSerializer(serializers.ModelSerializer):
 
 
 class CategorySerializer(serializers.ModelSerializer):
-    exo_roles = CategoryExORoleSerializer(many=True)
+    roles = CategoryExORoleSerializer(many=True)
 
     class Meta:
         model = Category
@@ -23,7 +23,7 @@ class CategorySerializer(serializers.ModelSerializer):
             'name',
             'code',
             'description',
-            'exo_roles',
+            'roles',
         ]
 
 
