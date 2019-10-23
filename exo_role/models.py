@@ -37,3 +37,18 @@ class ExORole(TimeStampedModel):
 
     def __str__(self):
         return self.name
+
+
+class CertificationRole(TimeStampedModel):
+    name = models.CharField(max_length=100)
+    code = models.CharField(max_length=3, choices=settings.EXO_ROLE_CERTIFICATION_CODE_CHOICES, unique=True)
+    level = models.IntegerField()
+    description = models.TextField(blank=True, null=True)
+
+    class Meta:
+        ordering = ['name']
+        verbose_name = 'CertificationRole'
+        verbose_name_plural = 'CertificationRoles'
+
+    def __str__(self):
+        return self.name

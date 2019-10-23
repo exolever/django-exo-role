@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from ..models import ExORole, Category
+from ..models import ExORole, CertificationRole, Category
 
 
 class CategoryExORoleSerializer(serializers.ModelSerializer):
@@ -48,4 +48,16 @@ class ExORoleSerializer(serializers.ModelSerializer):
             'description',
             'code',
             'categories',
+        ]
+
+
+class CertificationRoleSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = CertificationRole
+        fields = [
+            'name',
+            'code',
+            'level',
+            'description',
         ]
