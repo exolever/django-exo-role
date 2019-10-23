@@ -45,3 +45,9 @@
   fields:
     name: Disruption Session
     code: DS
+
+- model: exo_role.Category
+  pk: 9
+  fields:
+    name: Other
+    code: OT

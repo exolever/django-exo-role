@@ -28,6 +28,7 @@ class ExORoleConfigConfig(AppConf):
     CATEGORY_ADVISORY_CALL = 'AC'
     CATEGORY_DISRUPTION_SESSION = 'DS'
     CATEGORY_TALK = 'TA'
+    CATEGORY_OTHER = 'OT'
 
     CATEGORY_CODE_CHOICES = (
         (CATEGORY_EXO_SPRINT, 'ExO Sprint'),
@@ -38,6 +39,7 @@ class ExORoleConfigConfig(AppConf):
         (CATEGORY_ADVISORY_CALL, 'Advisory Call'),
         (CATEGORY_DISRUPTION_SESSION, 'Disruption Session'),
         (CATEGORY_TALK, 'Talk'),
+        (CATEGORY_OTHER, 'Other'),
     )
 
     # EXO SPRINT
@@ -87,6 +89,14 @@ class ExORoleConfigConfig(AppConf):
     # DISRUPTION SESION
     CODE_DISRUPTION_SPEAKER = 'DSD'
 
+    # OTHER
+    CODE_OTHER_ADVISOR = 'OAD'
+    CODE_OTHER_COACH = 'OCO'
+    CODE_OTHER_CONSULTANT = 'OCN'
+    CODE_OTHER_SPEAKER = 'OSP'
+    CODE_OTHER_TRAINER = 'OTR'
+    CODE_OTHER_OTHER = 'OOO'
+
     CODE_CHOICES = (
         (CODE_SPRINT_HEAD_COACH, 'Head Coach'),
         (CODE_SPRINT_COACH, 'Sprint Coach'),
@@ -126,6 +136,14 @@ class ExORoleConfigConfig(AppConf):
         (CODE_TALK_SPEAKER, 'Speaker'),
 
         (CODE_DISRUPTION_SPEAKER, 'Disruptor'),
+
+        (CODE_OTHER_ADVISOR, 'Advisor'),
+        (CODE_OTHER_COACH, 'Coach'),
+        (CODE_OTHER_CONSULTANT, 'Consultant'),
+        (CODE_OTHER_SPEAKER, 'Speaker'),
+        (CODE_OTHER_TRAINER, 'Trainer'),
+        (CODE_OTHER_OTHER, 'Other'),
+
     )
 
     CODE_CERTIFICATION_AMBASSADOR = 'CEA'
