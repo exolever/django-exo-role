@@ -17,5 +17,6 @@ class Command(BaseCommand):
         call_command('loaddata', '7_roles_talk')
         call_command('loaddata', '8_roles_disruption_session')
         call_command('loaddata', '9_roles_other')
+        call_command('loaddata', '10_roles_certification_program')
 
         self.stdout.write(self.style.SUCCESS('Roles created!'))

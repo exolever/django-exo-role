@@ -24,9 +24,14 @@ class Migration(migrations.Migration):
                     default=django.utils.timezone.now, editable=False, verbose_name='modified')),
                 ('name', models.CharField(max_length=100)),
                 ('code', models.CharField(
-                    choices=[('SP', 'ExO Sprint'), ('FA', 'Fastrack'), ('WO', 'Workshop'), ('SW', 'Swarm'),
-                             ('SU', 'Summit'), ('AC', 'Advisory Call'), ('DS', 'Disruption Session'), ('TA', 'Talk'),
-                             ('OT', 'Other')],
+                    choices=[
+                        ('SP', 'ExO Sprint'), ('FA', 'Fastrack'),
+                        ('WO', 'Workshop'), ('SW', 'Swarm'),
+                        ('SU', 'Summit'),
+                        ('AC', 'Advisory Call'), ('DS', 'Disruption Session'),
+                        ('TA', 'Talk'), ('CP', 'Certification Program'),
+                        ('OT', 'Other')
+                    ],
                     max_length=2)),
                 ('description', models.TextField(blank=True, null=True)),
             ],

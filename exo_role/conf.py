@@ -28,6 +28,7 @@ class ExORoleConfigConfig(AppConf):
     CATEGORY_ADVISORY_CALL = 'AC'
     CATEGORY_DISRUPTION_SESSION = 'DS'
     CATEGORY_TALK = 'TA'
+    CATEGORY_CERTIFICATION_PROGRAM = 'CP'
     CATEGORY_OTHER = 'OT'
 
     CATEGORY_CODE_CHOICES = (
@@ -39,6 +40,7 @@ class ExORoleConfigConfig(AppConf):
         (CATEGORY_ADVISORY_CALL, 'Advisory Call'),
         (CATEGORY_DISRUPTION_SESSION, 'Disruption Session'),
         (CATEGORY_TALK, 'Talk'),
+        (CATEGORY_CERTIFICATION_PROGRAM, 'Certification Program'),
         (CATEGORY_OTHER, 'Other'),
     )
 
@@ -56,6 +58,7 @@ class ExORoleConfigConfig(AppConf):
     CODE_SPRINT_REPORTER = 'SRE'
     CODE_ACCOUNT_MANAGER = 'SAM'
     CODE_SHADOW_COACH = 'SSC'
+    CODE_SPRINT_OBSERVER = 'SOB'
     CODE_SPRINT_OTHER = 'SOT'
 
     # FASTRACK
@@ -89,12 +92,19 @@ class ExORoleConfigConfig(AppConf):
     # DISRUPTION SESION
     CODE_DISRUPTION_SPEAKER = 'DSD'
 
+    # CERTIFICATION PROGRAM
+    CODE_PROGRAM_MASTER_TRAINER = 'CMT'
+    CODE_PROGRAM_MENTOR_COACH = 'CMC'
+    CODE_PROGRAM_ADVISOR = 'CAD'
+    CODE_PROGRAM_DISRUPTOR = 'CDI'
+
     # OTHER
     CODE_OTHER_ADVISOR = 'OAD'
     CODE_OTHER_COACH = 'OCO'
     CODE_OTHER_CONSULTANT = 'OCN'
     CODE_OTHER_SPEAKER = 'OSP'
     CODE_OTHER_TRAINER = 'OTR'
+    CODE_OTHER_DISRUPTOR = 'ODR'
     CODE_OTHER_OTHER = 'OOO'
 
     CODE_CHOICES = (
@@ -142,7 +152,13 @@ class ExORoleConfigConfig(AppConf):
         (CODE_OTHER_CONSULTANT, 'Consultant'),
         (CODE_OTHER_SPEAKER, 'Speaker'),
         (CODE_OTHER_TRAINER, 'Trainer'),
+        (CODE_OTHER_DISRUPTOR, 'Disruptor'),
         (CODE_OTHER_OTHER, 'Other'),
+
+        (CODE_PROGRAM_MASTER_TRAINER, 'Master Trainer'),
+        (CODE_PROGRAM_MENTOR_COACH, 'Mentor Coach'),
+        (CODE_PROGRAM_ADVISOR, 'Avisor'),
+        (CODE_PROGRAM_DISRUPTOR, 'Disruptor'),
 
     )
 

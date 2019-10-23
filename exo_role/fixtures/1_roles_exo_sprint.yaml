@@ -92,6 +92,13 @@
 - model: exo_role.ExORole
   pk: 14
   fields:
+    name: Observer
+    code: SOB
+    categories: [1]
+
+- model: exo_role.ExORole
+  pk: 15
+  fields:
     name: Other
     code: SOT
     categories: [1]

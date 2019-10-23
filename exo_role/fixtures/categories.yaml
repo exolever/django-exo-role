@@ -51,3 +51,9 @@
   fields:
     name: Other
     code: OT
+
+- model: exo_role.Category
+  pk: 10
+  fields:
+    name: Certification Programs
+    code: CP

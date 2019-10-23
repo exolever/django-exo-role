@@ -36,6 +36,13 @@
 - model: exo_role.ExORole
   pk: 166
   fields:
+    name: Disruptor
+    code: ODR
+    categories: [9]
+
+- model: exo_role.ExORole
+  pk: 167
+  fields:
     name: Other
     code: OOO
     categories: [9]
