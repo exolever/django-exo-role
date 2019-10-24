@@ -3,12 +3,11 @@ from django.db import models
 from model_utils.models import TimeStampedModel
 
 from .manager import ExORoleManager
-from .conf import settings
 
 
 class Category(TimeStampedModel):
     name = models.CharField(max_length=100)
-    code = models.CharField(max_length=2, choices=settings.EXO_ROLE_CATEGORY_CODE_CHOICES)
+    code = models.CharField(max_length=2, unique=True)
     description = models.TextField(blank=True, null=True)
 
     class Meta:
@@ -24,7 +23,7 @@ class Category(TimeStampedModel):
 
 class ExORole(TimeStampedModel):
     name = models.CharField(max_length=100)
-    code = models.CharField(max_length=3, choices=settings.EXO_ROLE_CODE_CHOICES, unique=True)
+    code = models.CharField(max_length=3, unique=True)
     categories = models.ManyToManyField('Category', related_name='roles')
     description = models.TextField(blank=True, null=True)
 
@@ -41,7 +40,7 @@ class ExORole(TimeStampedModel):
 
 class CertificationRole(TimeStampedModel):
     name = models.CharField(max_length=100)
-    code = models.CharField(max_length=3, choices=settings.EXO_ROLE_CERTIFICATION_CODE_CHOICES, unique=True)
+    code = models.CharField(max_length=3, unique=True)
     level = models.IntegerField()
     description = models.TextField(blank=True, null=True)
 
