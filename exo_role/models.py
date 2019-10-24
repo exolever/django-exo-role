@@ -3,6 +3,7 @@ from django.db import models
 from model_utils.models import TimeStampedModel
 
 from .manager import ExORoleManager
+from .conf import settings  # noqa
 
 
 class Category(TimeStampedModel):
