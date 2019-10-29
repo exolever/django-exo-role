@@ -24,7 +24,6 @@ class ExORoleConfigConfig(AppConf):
     CATEGORY_WORKSHOP = 'WO'
     CATEGORY_SWARM = 'SW'
     CATEGORY_SUMMIT = 'SU'
-    CATEGORY_SUMMIT = 'SU'
     CATEGORY_ADVISORY_CALL = 'AC'
     CATEGORY_DISRUPTION_SESSION = 'DS'
     CATEGORY_TALK = 'TA'
@@ -121,6 +120,7 @@ class ExORoleConfigConfig(AppConf):
         (CODE_SPRINT_REPORTER, 'Reporter'),
         (CODE_ACCOUNT_MANAGER, 'Account Manager'),
         (CODE_SHADOW_COACH, 'Shadow Coach'),
+        (CODE_SPRINT_OBSERVER, 'Observer'),
         (CODE_SPRINT_OTHER, 'Other'),
 
         (CODE_FASTRACK_TEAM_LEADER, 'Team Leader'),

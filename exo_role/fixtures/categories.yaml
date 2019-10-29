@@ -55,5 +55,5 @@
 - model: exo_role.Category
   pk: 10
   fields:
-    name: Certification Programs
+    name: Certification Program
     code: CP
