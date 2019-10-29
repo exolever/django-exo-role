@@ -68,6 +68,7 @@ class ExORoleConfigConfig(AppConf):
     CODE_FASTRACK_SOLUTION_ACCELERATOR = 'FSA'
     CODE_FASTRACK_OBSERVER_EVALUATOR = 'FOE'
     CODE_FASTRACK_LOCAL_TEAM_MEMBER = 'FLM'
+    CODE_FASTRACK_ADVISOR = 'FAD'
 
     # WORKSHOP
     CODE_WORKSHOP_SPEAKER = 'WSP'
@@ -130,6 +131,7 @@ class ExORoleConfigConfig(AppConf):
         (CODE_FASTRACK_SOLUTION_ACCELERATOR, 'Solution Accelerator'),
         (CODE_FASTRACK_OBSERVER_EVALUATOR, 'Observer/Evaluator'),
         (CODE_FASTRACK_LOCAL_TEAM_MEMBER, 'Local Team Member'),
+        (CODE_FASTRACK_ADVISOR, 'Advisor'),
 
         (CODE_WORKSHOP_SPEAKER, 'Speaker'),
         (CODE_WORKSHOP_TRAINER, 'Trainer'),

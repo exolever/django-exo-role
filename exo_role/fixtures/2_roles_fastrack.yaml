@@ -51,3 +51,10 @@
     code: FLM
     categories: [2]
     description: For one Fastrack, participate meaningfully during the Solve stage and support your team's efforts and the needs of the Region
+
+- model: exo_role.ExORole
+  pk: 28
+  fields:
+    name: Advisor
+    code: FAD
+    categories: [2]
