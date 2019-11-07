@@ -45,7 +45,7 @@ class Migration(migrations.Migration):
                     default=django.utils.timezone.now, editable=False, verbose_name='modified')),
                 ('name', models.CharField(max_length=100)),
                 ('code', models.CharField(max_length=3, unique=True)),
-                ('level', models.IntegerField()),
+                ('level', models.IntegerField(blank=True, null=True)),
                 ('description', models.TextField(blank=True, null=True)),
             ],
             options={

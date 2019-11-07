@@ -26,7 +26,7 @@ class ExORoleConfigConfig(AppConf):
     CATEGORY_SUMMIT = 'SU'
     CATEGORY_ADVISORY_CALL = 'AC'
     CATEGORY_DISRUPTION_SESSION = 'DS'
-    CATEGORY_TALK = 'TA'
+    CATEGORY_KEYNOTE = 'TA'
     CATEGORY_CERTIFICATION_PROGRAM = 'CP'
     CATEGORY_OTHER = 'OT'
 
@@ -38,7 +38,7 @@ class ExORoleConfigConfig(AppConf):
         (CATEGORY_SUMMIT, 'Summit'),
         (CATEGORY_ADVISORY_CALL, 'Advisory Call'),
         (CATEGORY_DISRUPTION_SESSION, 'Disruption Session'),
-        (CATEGORY_TALK, 'Talk'),
+        (CATEGORY_KEYNOTE, 'Keynote presentation'),
         (CATEGORY_CERTIFICATION_PROGRAM, 'Certification Program'),
         (CATEGORY_OTHER, 'Other'),
     )

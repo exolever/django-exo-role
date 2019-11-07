@@ -3,14 +3,12 @@
   fields:
     name: ExO Ambassador
     code: CEA
-    level: 2
 
 - model: exo_role.CertificationRole
   pk: 2
   fields:
     name: ExO Board Advisor
     code: CBA
-    level: 2
 
 - model: exo_role.CertificationRole
   pk: 3
