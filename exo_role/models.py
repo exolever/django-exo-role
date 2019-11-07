@@ -36,7 +36,7 @@ class ExORole(TimeStampedModel):
         verbose_name_plural = 'ExORoles'
 
     def __str__(self):
-        return self.name
+        return '{} - {}'.format(self.categories.first().name, self.name)
 
 
 class CertificationRole(TimeStampedModel):
