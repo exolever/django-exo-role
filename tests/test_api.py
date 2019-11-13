@@ -21,7 +21,7 @@ class TestAPITestCase(APITestCase):
 
     def test_api_roles_certification_list(self):
         # PREPARE DATA
-        url = reverse('exo-role:roles-certification-list')
+        url = reverse('exo-role:certifications-list')
 
         # DO ACTION
         response = self.client.get(url)
