@@ -159,7 +159,7 @@ class ExORoleConfigConfig(AppConf):
 
         (CODE_PROGRAM_MASTER_TRAINER, 'Master Trainer'),
         (CODE_PROGRAM_MENTOR_COACH, 'Mentor Coach'),
-        (CODE_PROGRAM_ADVISOR, 'Avisor'),
+        (CODE_PROGRAM_ADVISOR, 'Advisor'),
         (CODE_PROGRAM_DISRUPTOR, 'Disruptor'),
 
     )
