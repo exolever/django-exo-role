@@ -25,3 +25,10 @@
     name: Organizer
     code: SUO
     categories: [5]
+
+- model: exo_role.ExORole
+  pk: 85
+  fields:
+    name: Coach
+    code: SUH
+    categories: [5]
