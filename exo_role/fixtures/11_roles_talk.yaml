@@ -1,0 +1,13 @@
+- model: exo_role.ExORole
+  pk: 201
+  fields:
+    name: Participant
+    code: TAP
+    categories: [11]
+
+- model: exo_role.ExORole
+  pk: 202
+  fields:
+    name: Speaker
+    code: TAS
+    categories: [11]

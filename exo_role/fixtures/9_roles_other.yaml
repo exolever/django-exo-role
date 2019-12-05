@@ -46,3 +46,10 @@
     name: Other
     code: OOO
     categories: [9]
+
+- model: exo_role.ExORole
+  pk: 168
+  fields:
+    name: Participant
+    code: OPA
+    categories: [9]

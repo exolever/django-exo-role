@@ -32,3 +32,10 @@
     name: Coach
     code: SUH
     categories: [5]
+
+- model: exo_role.ExORole
+  pk: 86
+  fields:
+    name: Participant
+    code: SUP
+    categories: [5]
