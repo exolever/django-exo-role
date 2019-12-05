@@ -37,7 +37,7 @@
 - model: exo_role.Category
   pk: 7
   fields:
-    name: Keynote presentation
+    name: Talk
     code: TA
 
 - model: exo_role.Category
@@ -57,9 +57,3 @@
   fields:
     name: Certification Program
     code: CP
-
-- model: exo_role.Category
-  pk: 11
-  fields:
-    name: Talk
-    code: TK

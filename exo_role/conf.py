@@ -24,10 +24,9 @@ class ExORoleConfigConfig(AppConf):
     CATEGORY_WORKSHOP = 'WO'
     CATEGORY_SWARM = 'SW'
     CATEGORY_SUMMIT = 'SU'
-    CATEGORY_TALK = 'TK'
     CATEGORY_ADVISORY_CALL = 'AC'
     CATEGORY_DISRUPTION_SESSION = 'DS'
-    CATEGORY_KEYNOTE = 'TA'
+    CATEGORY_TALK = 'TA'
     CATEGORY_CERTIFICATION_PROGRAM = 'CP'
     CATEGORY_OTHER = 'OT'
 
@@ -37,10 +36,9 @@ class ExORoleConfigConfig(AppConf):
         (CATEGORY_WORKSHOP, 'Workshop'),
         (CATEGORY_SWARM, 'Swarm'),
         (CATEGORY_SUMMIT, 'Summit'),
-        (CATEGORY_TALK, 'Talk'),
         (CATEGORY_ADVISORY_CALL, 'Advisory Call'),
         (CATEGORY_DISRUPTION_SESSION, 'Disruption Session'),
-        (CATEGORY_KEYNOTE, 'Keynote presentation'),
+        (CATEGORY_TALK, 'Talk'),
         (CATEGORY_CERTIFICATION_PROGRAM, 'Certification Program'),
         (CATEGORY_OTHER, 'Other'),
     )
