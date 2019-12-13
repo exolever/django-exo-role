@@ -26,7 +26,7 @@ class ExORoleConfigConfig(AppConf):
     CATEGORY_SUMMIT = 'SU'
     CATEGORY_ADVISORY_CALL = 'AC'
     CATEGORY_DISRUPTION_SESSION = 'DS'
-    CATEGORY_KEYNOTE = 'TA'
+    CATEGORY_TALK = 'TA'
     CATEGORY_CERTIFICATION_PROGRAM = 'CP'
     CATEGORY_OTHER = 'OT'
 
@@ -38,7 +38,7 @@ class ExORoleConfigConfig(AppConf):
         (CATEGORY_SUMMIT, 'Summit'),
         (CATEGORY_ADVISORY_CALL, 'Advisory Call'),
         (CATEGORY_DISRUPTION_SESSION, 'Disruption Session'),
-        (CATEGORY_KEYNOTE, 'Keynote presentation'),
+        (CATEGORY_TALK, 'Talk'),
         (CATEGORY_CERTIFICATION_PROGRAM, 'Certification Program'),
         (CATEGORY_OTHER, 'Other'),
     )
@@ -71,6 +71,7 @@ class ExORoleConfigConfig(AppConf):
     CODE_FASTRACK_ADVISOR = 'FAD'
 
     # WORKSHOP
+    CODE_WORKSHOP_PARTICIPANT = 'WPA'
     CODE_WORKSHOP_SPEAKER = 'WSP'
     CODE_WORKSHOP_TRAINER = 'WTR'
 
@@ -78,6 +79,7 @@ class ExORoleConfigConfig(AppConf):
     CODE_SWARM_ADVISOR = 'SWA'
 
     # SUMMITS
+    CODE_SUMMIT_PARTICIPANT = 'SUP'
     CODE_SUMMIT_COLLABORATOR = 'SUC'
     CODE_SUMMIT_SPEAKER = 'SUS'
     CODE_SUMMIT_FACILITATOR = 'SUF'
@@ -88,6 +90,7 @@ class ExORoleConfigConfig(AppConf):
     CODE_TICKET_ADVISOR = 'ACA'
 
     # TALK
+    CODE_TALK_PARTICIPANT = 'TAP'
     CODE_TALK_SPEAKER = 'TAS'
 
     # DISRUPTION SESION
@@ -100,6 +103,7 @@ class ExORoleConfigConfig(AppConf):
     CODE_PROGRAM_DISRUPTOR = 'CDI'
 
     # OTHER
+    CODE_OTHER_PARTICIPANT = 'OPA'
     CODE_OTHER_ADVISOR = 'OAD'
     CODE_OTHER_COACH = 'OCO'
     CODE_OTHER_CONSULTANT = 'OCN'
@@ -134,11 +138,13 @@ class ExORoleConfigConfig(AppConf):
         (CODE_FASTRACK_LOCAL_TEAM_MEMBER, 'Local Team Member'),
         (CODE_FASTRACK_ADVISOR, 'Advisor'),
 
+        (CODE_WORKSHOP_PARTICIPANT, 'Participant'),
         (CODE_WORKSHOP_SPEAKER, 'Speaker'),
         (CODE_WORKSHOP_TRAINER, 'Trainer'),
 
         (CODE_SWARM_ADVISOR, 'Advisor'),
 
+        (CODE_SUMMIT_PARTICIPANT, 'Participant'),
         (CODE_SUMMIT_COLLABORATOR, 'Collaborator'),
         (CODE_SUMMIT_SPEAKER, 'Speaker'),
         (CODE_SUMMIT_FACILITATOR, 'Facilitator'),
@@ -146,10 +152,12 @@ class ExORoleConfigConfig(AppConf):
 
         (CODE_TICKET_ADVISOR, 'Advisor'),
 
+        (CODE_TALK_PARTICIPANT, 'Participant'),
         (CODE_TALK_SPEAKER, 'Speaker'),
 
         (CODE_DISRUPTION_SPEAKER, 'Disruptor'),
 
+        (CODE_OTHER_PARTICIPANT, 'Participant'),
         (CODE_OTHER_ADVISOR, 'Advisor'),
         (CODE_OTHER_COACH, 'Coach'),
         (CODE_OTHER_CONSULTANT, 'Consultant'),
@@ -162,7 +170,6 @@ class ExORoleConfigConfig(AppConf):
         (CODE_PROGRAM_MENTOR_COACH, 'Mentor Coach'),
         (CODE_PROGRAM_ADVISOR, 'Advisor'),
         (CODE_PROGRAM_DISRUPTOR, 'Disruptor'),
-
     )
 
     CODE_CERTIFICATION_AMBASSADOR = 'CEA'

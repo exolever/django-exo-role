@@ -11,3 +11,10 @@
     name: Trainer
     code: WTR
     categories: [3]
+
+- model: exo_role.ExORole
+  pk: 43
+  fields:
+    name: Participant
+    code: WPA
+    categories: [3]

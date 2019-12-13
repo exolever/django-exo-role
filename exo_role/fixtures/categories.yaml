@@ -37,7 +37,7 @@
 - model: exo_role.Category
   pk: 7
   fields:
-    name: Keynote presentation
+    name: Talk
     code: TA
 
 - model: exo_role.Category
