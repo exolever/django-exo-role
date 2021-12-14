@@ -4,9 +4,9 @@ Installation
 
 At the command line::
 
-    $ easy_install exolever/django-exorole
+    $ easy_install exolever/django-exo-role
 
 Or, if you have virtualenvwrapper installed::
 
-    $ mkvirtualenv exolever/django-exorole
-    $ pip install exolever/django-exorole
+    $ mkvirtualenv exolever/django-exo-role
+    $ pip install exolever/django-exo-role

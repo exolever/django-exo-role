@@ -15,12 +15,12 @@ script:
 deploy:
   provider: pypi
   distributions: sdist bdist_wheel
-  user: 60474827-33ca-48ed-bc0b-82e2d4b4ef24
+  user: marfyl
   password:
-    secure: pypi-AgEIcHlwaS5vcmcCJDYwNDc0ODI3LTMzY2EtNDhlZC1iYzBiLTgyZTJkNGI0ZWYyNAACJXsicGVybWlzc2lvbnMiOiAidXNlciIsICJ2ZXJzaW9uIjogMX0AAAYgQGvq_j3B1hn69OyFUN9ngKbxjD5PFohB8qcTTqRIXU4
+    secure: pkctelyZpa+qs/jNEt1+bf3txG3eU0Do/42LRiHDi5qlQtQHgjDs6WiUMJKYK9VirFyBQedKH8qDvjwE4+Y0BOYqsL/hf4WCfm/MvRBzijjpsouy8updvQdZWz+U9R4wgusBUPahFqFcZ3phWuzDaCkCPH4170niza1Mbjy80xN+DbxgwO3bJR7/Y+iLHxswwCSXGJYMDaHyv/ArSCbb3pSBaQj84ZYrB58C+Hn9Jbe9dTgepLHYSkZ/X0iBaqrHONQ/Tb0xz+hKmbThSa2lWKxCu0qYJtePLx7BDdt7obXrryyCPky2nUaUNgHjhpPCBn57uSTkWoqnoSWmQUQUMDPyY6bGYxruNfkYlwz1VCL+4kzi9nQS9RYh8xqB8vlG55xknm1+wNoXAECYRWNBGExmGc72yLi+bBLU10umuPpd4w7gFnb0JPYQEQCac7N1sxXH2tHqT0FD57vhMX0t0BYL+Q8061sKw/r4kwdItdJuI7Gq493C1qIIGu+Gtj8JLd92jzXEaesFp3A22E88SZuEGVYWeDwFW7cYAKcMkWNUZI9245alnm9v+DEkQsu4ruzYzNMZpkL8WG13/Ld51sdnC55xzZjSGeG6FS42zUI/4cr0eNwxJtUSuIfwL3U/l7T1nizKOKaYslplGbnabkQUGe/gtSK4M9ThVe5SAl8=
   on:
     tags: true
-    repo: exolever/django-exorole
+    repo: exolever/django-exo-role
     python: 3.7
 after_success:
   - codecov

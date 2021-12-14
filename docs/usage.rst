@@ -2,7 +2,7 @@
 Usage
 =====
 
-To use django-exorole in a project, add it to your `INSTALLED_APPS`:
+To use django-exo-role in a project, add it to your `INSTALLED_APPS`:
 
 .. code-block:: python
 
@@ -12,7 +12,7 @@ To use django-exorole in a project, add it to your `INSTALLED_APPS`:
         ...
     )
 
-Add django-exorole's URL patterns:
+Add django-exo-role's URL patterns:
 
 .. code-block:: python
 

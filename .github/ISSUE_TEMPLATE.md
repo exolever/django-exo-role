@@ -4,7 +4,7 @@ Explain the problem you encountered.
 
 ## Environment
 
-- django-exorole version:
+- django-exo-role version:
 - django version: 
 - python version: 
 - other libraries used, if any:

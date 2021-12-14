@@ -43,7 +43,7 @@ coverage: ## check code coverage quickly with the default Python
 	open htmlcov/index.html
 
 docs: ## generate Sphinx HTML documentation, including API docs
-	rm -f docs/exolever/django-exorole.rst
+	rm -f docs/exolever/django-exo-role.rst
 	rm -f docs/modules.rst
 	sphinx-apidoc -o docs/ exo_role
 	$(MAKE) -C docs clean
