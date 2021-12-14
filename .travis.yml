@@ -5,22 +5,22 @@ python: 3.7
 matrix:
   fast_finish: true
 services:
-  - postgresql
+- postgresql
 install:
-  - pip install -r requirements_test.txt
+- pip install -r requirements_test.txt
 before_script:
-  - psql -c 'create database travis_ci_test;' -U postgres
+- psql -c 'create database travis_ci_test;' -U postgres
 script:
-  - tox
+- tox
 deploy:
   provider: pypi
   distributions: sdist bdist_wheel
   user: __token__
   password:
-    secure: yM8dVSypUEwO7nAY4TDxzjuKiDCILynUy63670SHH0lorr8djrY9QNBsmjBMQ8oXdIqPBTH4tigd38tKFw/9rGwEmH4Z4w7qirDhd8TKDh1poDtEi+yPY3BO335ACpeNUsSSSXiVVeWajqxpFEfdyLfZm9x2EkFWYkUQRzbEgFlhxvY863XxxRwQ3RphR1aIcuAiEbbHgDe1b4b5+EwiORwdeLe7stCpUvkGK90u+H0dNN4R1xZQO1gPZ3tdp1XE/Ozef1H9a+DdRO5Fc/roM3jABEFTqr8e67i5qiw8YcAGcgvVwPSuFqJoZMISjJeURs59StG/bcl6aC0a+oP1GXOC2uu0nKt7J+wAOigmJHVu0XGWl6qmIlnykBo7V7MC6/UsjjkrUenfwTI0uF5UCE/mcd3qaaOCeodApuLxt7/XA2x3jESfmpmzwJx8vOvBmoePSF0LbZ+OARSPve25D8ULqBQfPhqUoMyY8c6Z9Vy9PV3rTYehre6g7A3ZmNYbFbSy1SfcO97KBo9SWRkp0JpIRO3hBezHKJkLyxTjU0jCq5+/cE+TAYUFOuMfy5BPtH/+DQ7e17MhwGiAWQnPVRR+IdMOUofO9ZFKBvXu6eTVmjhSqK0IlB0tYO+MZHwGT5PGX5TMDqaOp7+VQF0NzAvcrvtvKwpSF8sl5KjMusE=
+    secure: fbfJek59xtzB5eMxs8ljRzGgzCztfCCoNbykUwv9RsRgPLWBbU7MDbVU66PI6uJoiKc0vqEMFMk8vZuEHllzN0MIs/gJlugiFb05zboMlfvXYCBrNxY/BLqZI4hfFqLOluHjnS2LUtW4vtq4tsTts30LltQH7rrS/GVlYZ9RNsR9I5/k4FDlu+pZhHut5bstRyhHsijii+oQdhzr8Xb9LNFF+cW4vo6rv0MPT8mE/yh+2FQUll3KjYKg0h6iQZ14js3I7CyhD4LHzHU2pULKbaw+hxhu6Dc1Yfz9Q8Su09p9ObQZGCeYG/l21fPEysSAISMpOKz2cnh9SOHPFA5jYYgr52BGYO3KkWDDElW0KSOofelu4Ijwe7JE2Kwkhr56LaK/QMRY4ZgAeZPRiH9QrTmmMDELPii6kzeN9z2QZ9SNr0t/+B5V484h6iv4W97BMzu8lhu50dNufquUPtNrTlCucf4CGQXt7dSTu24X5Xheoph3Q4uG8uQjtEl7cdusNbRhZ08pjNqFQWorE7WKdLT5u1vJE0GS7FvxDRmQFqcyXIqpmF4tRzG3yr+woC66bLs4kM2OSvXEYqSJ/i0tN/TLEWB/C7It6ynjczULuCABybxBArG0asME0LeS23Is4vy775RVpxZ8XDt6ZWKrlDFtuhIufL4hSbA1E/kt8Y0=
   on:
     tags: true
     repo: exolever/django-exo-role
     python: 3.7
 after_success:
-  - codecov
+- codecov
