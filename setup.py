@@ -23,13 +23,13 @@ readme = open('README.rst').read()
 history = open('HISTORY.rst').read().replace('.. :changelog:', '')
 
 setup(
-    name='django-exo-role',
+    name='django-exorole',
     version=version,
     description='Use roles system with Django',
     long_description=readme,
     author='marfyl',
     author_email='marfyl.dev@gmail.com',
-    url='https://github.com/exolever/django-exo-role',
+    url='https://github.com/exolever/django-exorole',
     packages=find_packages(),
     package_data={'exo_role': ['fixtures/*.yaml']},
     include_package_data=True,

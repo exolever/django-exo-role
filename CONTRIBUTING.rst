@@ -3,7 +3,7 @@ Contributing
 ============
 
 Contributions are welcome, and they are greatly appreciated! Every
-little bit helps, and credit will always be given. 
+little bit helps, and credit will always be given.
 
 You can contribute in many ways:
 
@@ -13,7 +13,7 @@ Types of Contributions
 Report Bugs
 ~~~~~~~~~~~
 
-Report bugs at https://github.com/marfyl/exolever/django-exo-role/issues.
+Report bugs at https://github.com/marfyl/exolever/django-exorole/issues.
 
 If you are reporting a bug, please include:
 
@@ -36,14 +36,14 @@ is open to whoever wants to implement it.
 Write Documentation
 ~~~~~~~~~~~~~~~~~~~
 
-django-exo-role could always use more documentation, whether as part of the 
-official django-exo-role docs, in docstrings, or even on the web in blog posts,
+django-exorole could always use more documentation, whether as part of the
+official django-exorole docs, in docstrings, or even on the web in blog posts,
 articles, and such.
 
 Submit Feedback
 ~~~~~~~~~~~~~~~
 
-The best way to send feedback is to file an issue at https://github.com/marfyl/exolever/django-exo-role/issues.
+The best way to send feedback is to file an issue at https://github.com/marfyl/exolever/django-exorole/issues.
 
 If you are proposing a feature:
 
@@ -55,17 +55,17 @@ If you are proposing a feature:
 Get Started!
 ------------
 
-Ready to contribute? Here's how to set up `exolever/django-exo-role` for local development.
+Ready to contribute? Here's how to set up `exolever/django-exorole` for local development.
 
-1. Fork the `exolever/django-exo-role` repo on GitHub.
+1. Fork the `exolever/django-exorole` repo on GitHub.
 2. Clone your fork locally::
 
-    $ git clone git@github.com:your_name_here/exolever/django-exo-role.git
+    $ git clone git@github.com:your_name_here/exolever/django-exorole.git
 
 3. Install your local copy into a virtualenv. Assuming you have virtualenvwrapper installed, this is how you set up your fork for local development::
 
-    $ mkvirtualenv exolever/django-exo-role
-    $ cd exolever/django-exo-role/
+    $ mkvirtualenv exolever/django-exorole
+    $ cd exolever/django-exorole/
     $ python setup.py develop
 
 4. Create a branch for local development::
@@ -81,7 +81,7 @@ Ready to contribute? Here's how to set up `exolever/django-exo-role` for local d
         $ python setup.py test
         $ tox
 
-   To get flake8 and tox, just pip install them into your virtualenv. 
+   To get flake8 and tox, just pip install them into your virtualenv.
 
 6. Commit your changes and push your branch to GitHub::
 
@@ -100,8 +100,8 @@ Before you submit a pull request, check that it meets these guidelines:
 2. If the pull request adds functionality, the docs should be updated. Put
    your new functionality into a function with a docstring, and add the
    feature to the list in README.rst.
-3. The pull request should work for Python 2.6, 2.7, and 3.3, and for PyPy. Check 
-   https://travis-ci.org/marfyl/exolever/django-exo-role/pull_requests
+3. The pull request should work for Python 2.6, 2.7, and 3.3, and for PyPy. Check
+   https://travis-ci.org/marfyl/exolever/django-exorole/pull_requests
    and make sure that the tests pass for all supported Python versions.
 
 Tips
