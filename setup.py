@@ -39,7 +39,7 @@ setup(
         'django-model-utils',
         'django-filter',
         'djangorestframework',
-        'psycopg2-binary',
+        'psycopg2==2.8.6',
         'pyaml',
     ],
     license="MIT",
