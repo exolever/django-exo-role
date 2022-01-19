@@ -74,3 +74,67 @@
     code: CBS
     level: 3
     description: ExO Builder Summit certification
+
+- model: exo_role.CertificationRole
+  pk: 11
+  fields:
+    name: ExO Sherpa Training
+    code: CST
+    level: 0
+    description: ExO Sherpa Training certification
+
+- model: exo_role.CertificationRole
+  pk: 12
+  fields:
+    name: ExO Sherpa Sherpa
+    code: CSS
+    level: 1
+    description: ExO Sherpa Sherpa certification
+
+- model: exo_role.CertificationRole
+  pk: 13
+  fields:
+    name: ExO Sherpa Lead
+    code: CSL
+    level: 2
+    description: ExO Sherpa Lead certification
+
+- model: exo_role.CertificationRole
+  pk: 14
+  fields:
+    name: ExO Sherpa Master
+    code: CSM
+    level: 3
+    description: ExO Sherpa Master certification
+
+- model: exo_role.CertificationRole
+  pk: 15
+  fields:
+    name: ExO Instructor Adjunt Instructor
+    code: CIA
+    level: 0
+    description: ExO Instructor Adjunt Instructor certification
+
+- model: exo_role.CertificationRole
+  pk: 16
+  fields:
+    name: ExO Instructor Instructor
+    code: CII
+    level: 1
+    description: ExO Instructor Instructor certification
+
+- model: exo_role.CertificationRole
+  pk: 17
+  fields:
+    name: ExO Instructor Lead
+    code: CIL
+    level: 2
+    description: ExO Instructor Lead certification
+
+- model: exo_role.CertificationRole
+  pk: 18
+  fields:
+    name: ExO Instructor Master
+    code: CIM
+    level: 3
+    description: ExO Instructor Master certification
