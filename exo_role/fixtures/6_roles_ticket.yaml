@@ -1,6 +1,6 @@
 - model: exo_role.ExORole
-  pk: 61
+  pk: 101
   fields:
     name: Advisor
-    code: SWA
-    categories: [4]
+    code: ACA
+    categories: [6]

@@ -5,18 +5,11 @@ django-exo-role
 .. image:: https://badge.fury.io/py/django-exo-role.svg
     :target: https://badge.fury.io/py/django-exo-role
 
-.. image:: https://requires.io/github/exolever/django-exo-role/requirements.svg?branch=master
-     :target: https://requires.io/github/exolever/django-exo-role/requirements/?branch=master
-     :alt: Requirements Status
-
 .. image:: https://travis-ci.org/exolever/django-exo-role.svg?branch=master
     :target: https://travis-ci.org/exolever/django-exo-role
 
 .. image:: https://codecov.io/gh/exolever/django-exo-role/branch/master/graph/badge.svg
     :target: https://codecov.io/gh/exolever/django-exo-role
-
-.. image:: https://sonarcloud.io/api/project_badges/measure?project=exolever_django-exo-role&metric=alert_status
-   :target: https://sonarcloud.io/dashboard?id=exolever_django-exo-role
   
 .. image:: https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat
    :target: https://github.com/exolever/django-exo-role/issues
@@ -24,7 +17,8 @@ django-exo-role
 .. image:: https://img.shields.io/badge/License-MIT-green.svg
    :target: https://opensource.org/licenses/MIT
 
-Use typeform as feedback with Django
+
+Use roles system with Django
 
 Quickstart
 ----------

@@ -1,15 +1,20 @@
 - model: exo_role.ExORole
-  pk: 22
+  pk: 41
   fields:
     name: Speaker
     code: WSP
-    category: WO
-    description: ---
+    categories: [3]
 
 - model: exo_role.ExORole
-  pk: 23
+  pk: 42
   fields:
     name: Trainer
     code: WTR
-    category: WO
-    description: ---
+    categories: [3]
+
+- model: exo_role.ExORole
+  pk: 43
+  fields:
+    name: Participant
+    code: WPA
+    categories: [3]

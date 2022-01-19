@@ -1,34 +1,26 @@
 sudo: false
 dist: xenial
 language: python
-cache: pip
-python:
-python:
-  - "3.7"
-  - "3.6"
+python: 3.7
 matrix:
   fast_finish: true
 services:
-  - postgresql
-addons:
-  sonarcloud:
-    organization: openexo
-install: 
-  - pip install -r requirements_test.txt
+- postgresql
+install:
+- pip install -r requirements_test.txt
 before_script:
-  - psql -c 'create database travis_ci_test;' -U postgres
+- psql -c 'create database travis_ci_test;' -U postgres
 script:
-  - tox
-  - sonar-scanner
+- tox
 deploy:
   provider: pypi
   distributions: sdist bdist_wheel
-  user: marfyl
+  user: __token__
   password:
-    secure: ''
+    secure: fbfJek59xtzB5eMxs8ljRzGgzCztfCCoNbykUwv9RsRgPLWBbU7MDbVU66PI6uJoiKc0vqEMFMk8vZuEHllzN0MIs/gJlugiFb05zboMlfvXYCBrNxY/BLqZI4hfFqLOluHjnS2LUtW4vtq4tsTts30LltQH7rrS/GVlYZ9RNsR9I5/k4FDlu+pZhHut5bstRyhHsijii+oQdhzr8Xb9LNFF+cW4vo6rv0MPT8mE/yh+2FQUll3KjYKg0h6iQZ14js3I7CyhD4LHzHU2pULKbaw+hxhu6Dc1Yfz9Q8Su09p9ObQZGCeYG/l21fPEysSAISMpOKz2cnh9SOHPFA5jYYgr52BGYO3KkWDDElW0KSOofelu4Ijwe7JE2Kwkhr56LaK/QMRY4ZgAeZPRiH9QrTmmMDELPii6kzeN9z2QZ9SNr0t/+B5V484h6iv4W97BMzu8lhu50dNufquUPtNrTlCucf4CGQXt7dSTu24X5Xheoph3Q4uG8uQjtEl7cdusNbRhZ08pjNqFQWorE7WKdLT5u1vJE0GS7FvxDRmQFqcyXIqpmF4tRzG3yr+woC66bLs4kM2OSvXEYqSJ/i0tN/TLEWB/C7It6ynjczULuCABybxBArG0asME0LeS23Is4vy775RVpxZ8XDt6ZWKrlDFtuhIufL4hSbA1E/kt8Y0=
   on:
     tags: true
     repo: exolever/django-exo-role
-    python: 3.6
+    python: 3.7
 after_success:
-  - codecov
+- codecov

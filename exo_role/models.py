@@ -1,55 +1,54 @@
 from django.db import models
-from django.conf import settings as settings_global
 
 from model_utils.models import TimeStampedModel
 
 from .manager import ExORoleManager
-from .conf import settings
+from .conf import settings  # noqa
 
 
-class ExORole(TimeStampedModel):
+class Category(TimeStampedModel):
     name = models.CharField(max_length=100)
-    code = models.CharField(max_length=3, choices=settings.EXO_ROLE_CODE_CHOICES, unique=True)
-    category = models.CharField(max_length=2, choices=settings.EXO_ROLE_CATEGORY_CHOICES)
+    code = models.CharField(max_length=2, unique=True)
     description = models.TextField(blank=True, null=True)
 
-    objects = ExORoleManager()
-
     class Meta:
-        verbose_name_plural = 'ExORoles'
-        verbose_name = 'ExORole'
-        ordering = ['category', 'name']
-        unique_together = ('code', 'category', )
+        ordering = ['name']
 
     def __str__(self):
         return self.name
 
     @property
-    def label(self):
-        return self.get_code_display()
+    def num_roles(self):
+        return self.roles.count()
 
-    @property
-    def is_job(self):
-        return self.code in settings.EXO_ROLES_PROJECT_WITH_JOBS
 
-    @property
-    def is_manager(self):
-        return self.code in [
-            settings_global.ROL_CH_HEAD_COACH,
-            settings_global.ROL_CH_CURATOR,
-            settings_global.ROL_CH_CO_CURATOR,
-        ]
+class ExORole(TimeStampedModel):
+    name = models.CharField(max_length=100)
+    code = models.CharField(max_length=3, unique=True)
+    categories = models.ManyToManyField('Category', related_name='roles')
+    description = models.TextField(blank=True, null=True)
 
-    @property
-    def group_by(self):
-        group_by = None
+    objects = ExORoleManager()
 
-        roles = [
-            settings_global.ROL_CH_TRAINER,
-            settings_global.ROL_CH_ALIGN_TRAINER,
-        ]
+    class Meta:
+        ordering = ['name']
+        verbose_name = 'ExORole'
+        verbose_name_plural = 'ExORoles'
 
-        if self.code in roles:
-            group_by = settings_global.ROL_CH_EXO_TRAINER
+    def __str__(self):
+        return '{} - {}'.format(self.categories.first().name, self.name)
 
-        return group_by
+
+class CertificationRole(TimeStampedModel):
+    name = models.CharField(max_length=100)
+    code = models.CharField(max_length=3, unique=True)
+    level = models.IntegerField(blank=True, null=True)
+    description = models.TextField(blank=True, null=True)
+
+    class Meta:
+        ordering = ['name']
+        verbose_name = 'CertificationRole'
+        verbose_name_plural = 'CertificationRoles'
+
+    def __str__(self):
+        return self.name

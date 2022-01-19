@@ -1,15 +1,19 @@
-from django_filters.rest_framework import DjangoFilterBackend
+from rest_framework import generics
 
-from rest_framework import generics, filters
-
-from .serializers import ExORoleSerializer
-from .filters import ExORoleFilter
-from ..models import ExORole
+from .serializers import ExORoleSerializer, CertificationRoleSerializer, CategorySerializer
+from ..models import ExORole, CertificationRole, Category
 
 
 class ExORoleListView(generics.ListAPIView):
     queryset = ExORole.objects.all()
     serializer_class = ExORoleSerializer
-    filter_backends = [DjangoFilterBackend, filters.OrderingFilter]
-    filter_class = ExORoleFilter
-    ordering = ('name',)
+
+
+class CertificationRoleListView(generics.ListAPIView):
+    queryset = CertificationRole.objects.all()
+    serializer_class = CertificationRoleSerializer
+
+
+class CategoryListView(generics.ListAPIView):
+    queryset = Category.objects.all()
+    serializer_class = CategorySerializer

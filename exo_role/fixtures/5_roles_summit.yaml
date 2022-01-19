@@ -1,27 +1,41 @@
 - model: exo_role.ExORole
-  pk: 25
+  pk: 81
   fields:
     name: Collaborator
     code: SUC
-    category: SU
+    categories: [5]
 
 - model: exo_role.ExORole
-  pk: 26
+  pk: 82
   fields:
     name: Speaker
     code: SUS
-    category: SU
+    categories: [5]
 
 - model: exo_role.ExORole
-  pk: 27
+  pk: 83
   fields:
     name: Facilitator
     code: SUF
-    category: SU
+    categories: [5]
 
 - model: exo_role.ExORole
-  pk: 28
+  pk: 84
   fields:
     name: Organizer
     code: SUO
-    category: SU
+    categories: [5]
+
+- model: exo_role.ExORole
+  pk: 85
+  fields:
+    name: Coach
+    code: SUH
+    categories: [5]
+
+- model: exo_role.ExORole
+  pk: 86
+  fields:
+    name: Participant
+    code: SUP
+    categories: [5]
