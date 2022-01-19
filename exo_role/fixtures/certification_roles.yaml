@@ -120,7 +120,7 @@
   fields:
     name: ExO Instructor Instructor
     code: CII
-    level: Instructor
+    level: 1
     description: ExO Instructor Instructor certification
 
 - model: exo_role.CertificationRole
