@@ -78,71 +78,71 @@
 - model: exo_role.CertificationRole
   pk: 11
   fields:
-    name: ExO Sherpa Training
+    name: ExO Builder sherpa Training
     code: CST
     level: 0
-    description: ExO Sherpa Training certification
+    description: ExO Builder sherpa Training certification
 
 - model: exo_role.CertificationRole
   pk: 12
   fields:
-    name: ExO Sherpa Sherpa
+    name: ExO Builder sherpa
     code: CSS
     level: 1
-    description: ExO Sherpa Sherpa certification
+    description: ExO Builder sherpa certification
 
 - model: exo_role.CertificationRole
   pk: 13
   fields:
-    name: ExO Sherpa Lead
+    name: ExO Builder sherpa Lead
     code: CSL
     level: 2
-    description: ExO Sherpa Lead certification
+    description: ExO Builder sherpa Lead certification
 
 - model: exo_role.CertificationRole
   pk: 14
   fields:
-    name: ExO Sherpa Master
+    name: ExO Builder sherpa Master
     code: CSM
     level: 3
-    description: ExO Sherpa Master certification
+    description: ExO Builder sherpa Master certification
 
 - model: exo_role.CertificationRole
   pk: 15
   fields:
-    name: ExO Instructor Adjunt Instructor
+    name: ExO Builder Instructor Adjunt Instructor
     code: CIA
     level: 0
-    description: ExO Instructor Adjunt Instructor certification
+    description: ExO Builder Instructor Adjunt Instructor certification
 
 - model: exo_role.CertificationRole
   pk: 16
   fields:
-    name: ExO Instructor Instructor
+    name: ExO Builder Instructor Instructor
     code: CII
     level: 1
-    description: ExO Instructor Instructor certification
+    description: ExO Builder Instructor Instructor certification
 
 - model: exo_role.CertificationRole
   pk: 17
   fields:
-    name: ExO Instructor Lead
+    name: ExO Builder Instructor Lead
     code: CIL
     level: 2
-    description: ExO Instructor Lead certification
+    description: ExO Builder Instructor Lead certification
 
 - model: exo_role.CertificationRole
   pk: 18
   fields:
-    name: ExO Instructor Master
+    name: ExO Builder Instructor Master
     code: CIM
     level: 3
-    description: ExO Instructor Master certification
+    description: ExO Builder Instructor Master certification
 
 - model: exo_role.CertificationRole
   pk: 19
   fields:
-    name: ExO Disruptor Constructor
+    name: ExO Builder Disruptor Constructor
     code: CDC
     level: 0
-    description: ExO Disruptor Constructor certification
+    description: ExO Builder Disruptor Constructor certification
