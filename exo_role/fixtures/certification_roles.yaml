@@ -145,7 +145,7 @@
     name: ExO Disruptor Constructor
     code: CDC
     level: 0
-    description: ExO Builder Disruptor Constructor certification
+    description: ExO Disruptor Constructor certification
 
 - model: exo_role.CertificationRole
   pk: 20
