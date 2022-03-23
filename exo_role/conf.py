@@ -2,7 +2,6 @@
 """
 License boilerplate should be used here.
 """
-
 # python 3 imports
 from __future__ import absolute_import, unicode_literals
 
