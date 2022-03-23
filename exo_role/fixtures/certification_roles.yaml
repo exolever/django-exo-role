@@ -150,7 +150,7 @@
 - model: exo_role.CertificationRole
   pk: 20
   fields:
-    name: 3 Party Certification
+    name: 3º Party Certification
     code: TPC
     level: 0
-    description: 3 Party Certification Program
+    description: 3º Party Certification Program
