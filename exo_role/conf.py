@@ -181,6 +181,9 @@ class ExORoleConfigConfig(AppConf):
     CODE_CERTIFICATION_SPRINT_COACH = 'CSC'
     CODE_CERTIFICATION_TRAINER = 'CTR'
 
+    # 3ºPARTY CERTIFICATION
+    CODE_CERTIFICATION_3_PARTY = 'TPC'
+
     # ExO Disruptor Constructor
     CODE_CERTIFICATION_DISRUPTOR_CONSTRUCTOR = 'CDC'
 
@@ -213,12 +216,14 @@ class ExORoleConfigConfig(AppConf):
         (CODE_CERTIFICATION_BUILDER_BASECAMP, 'ExO Builder Basecamp'),
         (CODE_CERTIFICATION_BUILDER_CAMP, 'ExO Builder Camp'),
         (CODE_CERTIFICATION_BUILDER_SUMMIT, 'ExO Builder Summit'),
-        (CODE_CERTIFICATION_SHERPA_TRAINING, 'ExO Sherpa Training'),
-        (CODE_CERTIFICATION_SHERPA_SHERPA, 'ExO Sherpa Sherpa'),
-        (CODE_CERTIFICATION_SHERPA_LEAD, 'ExO Sherpa Lead'),
-        (CODE_CERTIFICATION_SHERPA_MASTER, 'ExO Sherpa Master'),
-        (CODE_CERTIFICATION_INSTRUCTOR_ADJUNT, 'ExO Instructor Adjunt Instructor'),
-        (CODE_CERTIFICATION_INSTRUCTOR_INSTRUCTOR, 'ExO Instructor Instructor'),
-        (CODE_CERTIFICATION_INSTRUCTOR_LEAD, 'ExO Instructor Lead'),
-        (CODE_CERTIFICATION_INSTRUCTOR_MASTER, 'ExO Instructor Master'),
+        (CODE_CERTIFICATION_SHERPA_TRAINING, 'ExO Builder sherpa Training'),
+        (CODE_CERTIFICATION_SHERPA_SHERPA, 'ExO Builder sherpa'),
+        (CODE_CERTIFICATION_SHERPA_LEAD, 'ExO Builder sherpa Lead'),
+        (CODE_CERTIFICATION_SHERPA_MASTER, 'ExO Builder sherpa Master'),
+        (CODE_CERTIFICATION_INSTRUCTOR_ADJUNT, 'ExO Builder Instructor Adjunt Instructor'),
+        (CODE_CERTIFICATION_INSTRUCTOR_INSTRUCTOR, 'ExO Builder Instructor Instructor'),
+        (CODE_CERTIFICATION_INSTRUCTOR_LEAD, 'ExO Builder Instructor Lead'),
+        (CODE_CERTIFICATION_INSTRUCTOR_MASTER, 'ExO Builder Instructor Master'),
+        (CODE_CERTIFICATION_DISRUPTOR_CONSTRUCTOR, 'ExO Builder Disruptor Constructor'),
+        (CODE_CERTIFICATION_3_PARTY, '3º Party Certification'),
     )

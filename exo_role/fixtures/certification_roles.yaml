@@ -78,34 +78,34 @@
 - model: exo_role.CertificationRole
   pk: 11
   fields:
-    name: ExO Sherpa Training
+    name: ExO sherpa Training
     code: CST
     level: 0
-    description: ExO Sherpa Training certification
+    description: ExO sherpa Training certification
 
 - model: exo_role.CertificationRole
   pk: 12
   fields:
-    name: ExO Sherpa Sherpa
+    name: ExO sherpa sherpa
     code: CSS
     level: 1
-    description: ExO Sherpa Sherpa certification
+    description: ExO sherpa sherpa certification
 
 - model: exo_role.CertificationRole
   pk: 13
   fields:
-    name: ExO Sherpa Lead
+    name: ExO sherpa Lead
     code: CSL
     level: 2
-    description: ExO Sherpa Lead certification
+    description: ExO sherpa Lead certification
 
 - model: exo_role.CertificationRole
   pk: 14
   fields:
-    name: ExO Sherpa Master
+    name: ExO sherpa Master
     code: CSM
     level: 3
-    description: ExO Sherpa Master certification
+    description: ExO sherpa Master certification
 
 - model: exo_role.CertificationRole
   pk: 15
@@ -145,4 +145,12 @@
     name: ExO Disruptor Constructor
     code: CDC
     level: 0
-    description: ExO Disruptor Constructor certification
+    description: ExO Builder Disruptor Constructor certification
+
+- model: exo_role.CertificationRole
+  pk: 20
+  fields:
+    name: 3º Party Certification
+    code: TPC
+    level: 0
+    description: 3º Party Certification Program
