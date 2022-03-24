@@ -7,7 +7,6 @@ matrix:
 services:
 - postgresql
 before_install:
-- python -m pip uninstall -y pip
 - python -m pip install pip==21.3.1
 install:
 - pip --version
