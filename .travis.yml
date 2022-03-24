@@ -9,6 +9,7 @@ services:
 before_install:
 - python -m pip install pip==21.3.1
 install:
+- pip --version
 - pip install -r requirements_test.txt
 before_script:
 - psql -c 'create database travis_ci_test;' -U postgres
