@@ -180,6 +180,9 @@ class ExORoleConfigConfig(AppConf):
     CODE_CERTIFICATION_SPRINT_COACH = 'CSC'
     CODE_CERTIFICATION_TRAINER = 'CTR'
 
+    # 3ºPARTY CERTIFICATION
+    CODE_CERTIFICATION_3_PARTY = 'TPC'
+
     # ExO Disruptor Constructor
     CODE_CERTIFICATION_DISRUPTOR_CONSTRUCTOR = 'CDC'
 
@@ -221,4 +224,5 @@ class ExORoleConfigConfig(AppConf):
         (CODE_CERTIFICATION_INSTRUCTOR_LEAD, 'ExO Builder Instructor Lead'),
         (CODE_CERTIFICATION_INSTRUCTOR_MASTER, 'ExO Builder Instructor Master'),
         (CODE_CERTIFICATION_DISRUPTOR_CONSTRUCTOR, 'ExO Builder Disruptor Constructor'),
+        (CODE_CERTIFICATION_3_PARTY, '3º Party Certification'),
     )
